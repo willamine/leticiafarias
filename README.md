@@ -201,3 +201,4 @@ wrangler publish
   - Use RLS (Row Level Security) e políticas no Supabase para garantir que mesmo se alguém chamar a API REST diretamente, não terá acesso indevido.
 
 Se quiser, eu monto o `wrangler.toml` final (eu preciso do `account_id`) e te envio os comandos exatos. Caso prefira, posso te guiar por telefone/terminal passo a passo enquanto você publica.
+Atualizando
