@@ -1,0 +1,15 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Node / build artifacts
+node_modules/
+.vite/
+dist/
+
+# Editor / OS files
+.DS_Store
+.vscode/
+*.log
+.env

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anamnese inicial para acompanhamento profissional de treino e saúde."
+    />
+    <title>Anamnese Inicial | Letícia Farias</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/formulario.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+         <a class="brand" href="index.html" aria-label="Página inicial">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/images/perfil.jpeg" alt="Logo Letícia Farias" width="50" height="50" />
+          </span>
+          <span class="brand-name">LETICIA FARIAS</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação do formulário">
+          <a href="index.html" class="link-button ghost-button">Início</a>
+          <a href="login.html" class="link-button primary-button">Painel</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="form-page">
+      <div class="form-shell">
+        <div class="card form-card">
+          <div class="form-intro">
+            <span class="eyebrow">MUSCULAÇÃO TERAPÊUTICA</span>
+            <h1 class="page-title">Anamnese inicial</h1>
+            <p class="lead">
+              Seja muito bem-vindo(a)! Este é o primeiro passo para alcançarmos seus objetivos com segurança e eficiência. As respostas que você fornecer aqui são fundamentais para que eu possa personalizar seu treino, respeitando suas individualidades e promovendo sua saúde. Leve o tempo que precisar para responder com atenção. Vamos juntos nessa transformação?
+            </p>
+          </div>
+
+          <form id="anamneseForm" novalidate>
+            <div class="step-progress" aria-label="Progresso do formulário">
+              <span class="step-dot active" data-dot="1"></span>
+              <span class="step-dot" data-dot="2"></span>
+              <span class="step-dot" data-dot="3"></span>
+              <span class="step-dot" data-dot="4"></span>
+              <span class="step-dot" data-dot="5"></span>
+              <span class="step-dot" data-dot="6"></span>
+            </div>
+
+            <div class="form-step active" data-step="1">
+              <div class="form-section">
+                <h2 class="form-section-header">Identificação e rotina diária</h2>
+                <div class="form-grid">
+                  <div class="form-field full">
+                    <label for="nomeCompleto">Nome completo <span class="required-indicator">*</span></label>
+                    <input id="nomeCompleto" name="nomeCompleto" type="text" autocomplete="name" required />
+                    <span id="nomeCompletoError" class="error-message" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input id="dataNascimento" name="dataNascimento" type="date" autocomplete="bday" />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="telefone">Telefone / WhatsApp <span class="required-indicator">*</span></label>
+                    <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required />
+                    <span id="telefoneError" class="error-message" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-field full">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" autocomplete="email" inputmode="email" />
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Idade</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="idade" value="18 a 29 anos" /> 18 a 29 anos</label>
+                      <label><input type="radio" name="idade" value="30 a 39 anos" /> 30 a 39 anos</label>
+                      <label><input type="radio" name="idade" value="40 a 49 anos" /> 40 a 49 anos</label>
+                      <label><input type="radio" name="idade" value="50 a 59 anos" /> 50 a 59 anos</label>
+                      <label><input type="radio" name="idade" value="60 anos ou mais" /> 60 anos ou mais</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Ocupação principal e tempo na mesma posição</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="ocupacao" value="Trabalho majoritariamente sentado (mais de 4 horas)" /> Trabalho majoritariamente sentado (mais de 4 horas)</label>
+                      <label><input type="radio" name="ocupacao" value="Trabalho majoritariamente em pé ou caminhando (mais de 4 horas)" /> Trabalho majoritariamente em pé ou caminhando (mais de 4 horas)</label>
+                      <label><input type="radio" name="ocupacao" value="Trabalho com alternância de posições" /> Trabalho com alternância de posições</label>
+                      <label><input type="radio" name="ocupacao" value="Trabalho com esforço físico intenso" /> Trabalho com esforço físico intenso</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Nível de energia e estresse diário</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="energiaEstresse" value="Energia alta e pouco estresse" /> Energia alta e pouco estresse</label>
+                      <label><input type="radio" name="energiaEstresse" value="Energia moderada e estresse moderado" /> Energia moderada e estresse moderado</label>
+                      <label><input type="radio" name="energiaEstresse" value="Energia baixa e estresse alto" /> Energia baixa e estresse alto</label>
+                      <label><input type="radio" name="energiaEstresse" value="Esgotamento frequente (Burnout)" /> Esgotamento frequente (Burnout)</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Qualidade e duração do sono</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="sono" value="Menos de 5 horas por noite (acordo cansado)" /> Menos de 5 horas por noite (acordo cansado)</label>
+                      <label><input type="radio" name="sono" value="6 a 7 horas por noite (acordo descansado a maior parte dos dias)" /> 6 a 7 horas por noite (acordo descansado a maior parte dos dias)</label>
+                      <label><input type="radio" name="sono" value="7 a 8 horas por noite (acordo bem)" /> 7 a 8 horas por noite (acordo bem)</label>
+                      <label><input type="radio" name="sono" value="Sono muito interrompido/insônia" /> Sono muito interrompido/insônia</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Ingestão diária de água</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="agua" value="Menos de 1 litro" /> Menos de 1 litro</label>
+                      <label><input type="radio" name="agua" value="1 a 2 litros" /> 1 a 2 litros</label>
+                      <label><input type="radio" name="agua" value="2 a 3 litros" /> 2 a 3 litros</label>
+                      <label><input type="radio" name="agua" value="Mais de 3 litros" /> Mais de 3 litros</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button type="button" class="secondary-button step-back" hidden>Voltar</button>
+                <button type="button" class="primary-button step-next">Próximo</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="2">
+              <div class="form-section">
+                <h2 class="form-section-header">Histórico geral de saúde</h2>
+                <div class="form-grid">
+                  <div class="form-field full">
+                    <span class="question-label">Possui algum diagnóstico médico ou restrição física</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="diagnostico" value="Nenhum" /> Nenhum</label>
+                      <label><input type="radio" name="diagnostico" value="Hipertensão" /> Hipertensão</label>
+                      <label><input type="radio" name="diagnostico" value="Diabetes" /> Diabetes</label>
+                      <label><input type="radio" name="diagnostico" value="Hérnia de disco/problemas na coluna" /> Hérnia de disco/problemas na coluna</label>
+                      <label><input type="radio" name="diagnostico" value="Artrose/Artrite" /> Artrose/Artrite</label>
+                      <label><input type="radio" name="diagnostico" value="Problemas cardíacos" /> Problemas cardíacos</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Uso frequente de medicamentos</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="medicamentos" value="Não faço uso" /> Não faço uso</label>
+                      <label><input type="radio" name="medicamentos" value="Anti-inflamatórios/Analgésicos" /> Anti-inflamatórios/Analgésicos</label>
+                      <label><input type="radio" name="medicamentos" value="Para pressão alta" /> Para pressão alta</label>
+                      <label><input type="radio" name="medicamentos" value="Para diabetes" /> Para diabetes</label>
+                      <label><input type="radio" name="medicamentos" value="Para ansiedade/depressão" /> Para ansiedade/depressão</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Histórico familiar de doenças</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="historicoFamiliar" value="Sem histórico relevante" /> Sem histórico relevante</label>
+                      <label><input type="radio" name="historicoFamiliar" value="Cardiovasculares" /> Cardiovasculares</label>
+                      <label><input type="radio" name="historicoFamiliar" value="Diabetes" /> Diabetes</label>
+                      <label><input type="radio" name="historicoFamiliar" value="Problemas articulares graves" /> Problemas articulares graves</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Sintomas em repouso ou esforço leve</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="sintomas" value="Nenhum" /> Nenhum</label>
+                      <label><input type="radio" name="sintomas" value="Tonturas" /> Tonturas</label>
+                      <label><input type="radio" name="sintomas" value="Náuseas" /> Náuseas</label>
+                      <label><input type="radio" name="sintomas" value="Falta de ar" /> Falta de ar</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button type="button" class="secondary-button step-back">Voltar</button>
+                <button type="button" class="primary-button step-next">Próximo</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="3">
+              <div class="form-section">
+                <h2 class="form-section-header">Dor e histórico de lesões</h2>
+                <div class="form-grid">
+                  <div class="form-field full">
+                    <span class="question-label">Local da dor atual</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="localDor" value="Cervical (pescoço) e ombros" /> Cervical (pescoço) e ombros</label>
+                      <label><input type="radio" name="localDor" value="Torácica (meio das costas)" /> Torácica (meio das costas)</label>
+                      <label><input type="radio" name="localDor" value="Lombar (parte baixa das costas)" /> Lombar (parte baixa das costas)</label>
+                      <label><input type="radio" name="localDor" value="Joelhos" /> Joelhos</label>
+                      <label><input type="radio" name="localDor" value="Quadril" /> Quadril</label>
+                      <label><input type="radio" name="localDor" value="Punhos/Tornozelos" /> Punhos/Tornozelos</label>
+                      <label><input type="radio" name="localDor" value="Sem dor no momento" /> Sem dor no momento</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Intensidade da dor (média recente)</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="intensidadeDor" value="0 (Sem dor)" /> 0 (Sem dor)</label>
+                      <label><input type="radio" name="intensidadeDor" value="1 a 3 (Leve/Incomoda, mas não limita)" /> 1 a 3 (Leve/Incomoda, mas não limita)</label>
+                      <label><input type="radio" name="intensidadeDor" value="4 a 6 (Moderada/Limita alguns movimentos)" /> 4 a 6 (Moderada/Limita alguns movimentos)</label>
+                      <label><input type="radio" name="intensidadeDor" value="7 a 10 (Intensa/Limita a maioria das atividades)" /> 7 a 10 (Intensa/Limita a maioria das atividades)</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Piora da dor</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="pioraDor" value="Ao acordar" /> Ao acordar</label>
+                      <label><input type="radio" name="pioraDor" value="Ao passar muito tempo sentado ou em pé" /> Ao passar muito tempo sentado ou em pé</label>
+                      <label><input type="radio" name="pioraDor" value="Após esforço físico/treino" /> Após esforço físico/treino</label>
+                      <label><input type="radio" name="pioraDor" value="No final do dia" /> No final do dia</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Fatores de alívio</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="alivioDor" value="Repouso" /> Repouso</label>
+                      <label><input type="radio" name="alivioDor" value="Movimento leve/alongamento" /> Movimento leve/alongamento</label>
+                      <label><input type="radio" name="alivioDor" value="Medicamentos" /> Medicamentos</label>
+                      <label><input type="radio" name="alivioDor" value="Calor ou Frio" /> Calor ou Frio</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Tratamentos prévios</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="tratamentos" value="Nenhum" /> Nenhum</label>
+                      <label><input type="radio" name="tratamentos" value="Fisioterapia" /> Fisioterapia</label>
+                      <label><input type="radio" name="tratamentos" value="Quiropraxia" /> Quiropraxia</label>
+                      <label><input type="radio" name="tratamentos" value="Cirurgia na região da dor" /> Cirurgia na região da dor</label>
+                      <label><input type="radio" name="tratamentos" value="Infiltrações/Bloqueios" /> Infiltrações/Bloqueios</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Lesões nos últimos anos</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="lesoes" value="Nenhuma" /> Nenhuma</label>
+                      <label><input type="radio" name="lesoes" value="Lesão muscular (estiramento)" /> Lesão muscular (estiramento)</label>
+                      <label><input type="radio" name="lesoes" value="Lesão ligamentar (entorse)" /> Lesão ligamentar (entorse)</label>
+                      <label><input type="radio" name="lesoes" value="Fratura óssea" /> Fratura óssea</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button type="button" class="secondary-button step-back">Voltar</button>
+                <button type="button" class="primary-button step-next">Próximo</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="4">
+              <div class="form-section">
+                <h2 class="form-section-header">Postura e anatomia funcional</h2>
+                <div class="form-grid">
+                  <div class="form-field full">
+                    <span class="question-label">Avaliação postural prévia</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="avaliacaoPostural" value="Nunca fiz" /> Nunca fiz</label>
+                      <label><input type="radio" name="avaliacaoPostural" value="Sim, com fisioterapeuta (identificou desvios/assimetrias)" /> Sim, com fisioterapeuta (identificou desvios/assimetrias)</label>
+                      <label><input type="radio" name="avaliacaoPostural" value="Sim, com personal trainer/educador físico" /> Sim, com personal trainer/educador físico</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Rigidez ou limitação de movimento</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="rigidez" value="Nenhuma" /> Nenhuma</label>
+                      <label><input type="radio" name="rigidez" value="Pescoço e ombros" /> Pescoço e ombros</label>
+                      <label><input type="radio" name="rigidez" value="Coluna em geral" /> Coluna em geral</label>
+                      <label><input type="radio" name="rigidez" value="Quadril" /> Quadril</label>
+                      <label><input type="radio" name="rigidez" value="Joelhos e tornozelos" /> Joelhos e tornozelos</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Movimentos repetitivos diários</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="movimentosRepetitivos" value="Sim, movimento com braços/mãos" /> Sim, movimento com braços/mãos</label>
+                      <label><input type="radio" name="movimentosRepetitivos" value="Sim, ficar muito tempo na mesma postura" /> Sim, ficar muito tempo na mesma postura</label>
+                      <label><input type="radio" name="movimentosRepetitivos" value="Sim, carregar peso" /> Sim, carregar peso</label>
+                      <label><input type="radio" name="movimentosRepetitivos" value="Não" /> Não</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Dormência ou formigamento</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="dormencia" value="Não" /> Não</label>
+                      <label><input type="radio" name="dormencia" value="Nos braços/mãos" /> Nos braços/mãos</label>
+                      <label><input type="radio" name="dormencia" value="Nas pernas/pés" /> Nas pernas/pés</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button type="button" class="secondary-button step-back">Voltar</button>
+                <button type="button" class="primary-button step-next">Próximo</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="5">
+              <div class="form-section">
+                <h2 class="form-section-header">Objetivos e expectativas</h2>
+                <div class="form-grid">
+                  <div class="form-field full">
+                    <span class="question-label">Principal objetivo</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="objetivoPrincipal" value="Sem dor/Reabilitação" /> Sem dor/Reabilitação</label>
+                      <label><input type="radio" name="objetivoPrincipal" value="Hipertrofia (ganho de massa)" /> Hipertrofia (ganho de massa)</label>
+                      <label><input type="radio" name="objetivoPrincipal" value="Emagrecimento" /> Emagrecimento</label>
+                      <label><input type="radio" name="objetivoPrincipal" value="Condicionamento físico/Saúde geral" /> Condicionamento físico/Saúde geral</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Tempo disponível para treinar</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="tempoTreino" value="Menos de 30 minutos" /> Menos de 30 minutos</label>
+                      <label><input type="radio" name="tempoTreino" value="30 a 45 minutos" /> 30 a 45 minutos</label>
+                      <label><input type="radio" name="tempoTreino" value="45 a 60 minutos" /> 45 a 60 minutos</label>
+                      <label><input type="radio" name="tempoTreino" value="Mais de 60 minutos" /> Mais de 60 minutos</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Local de treino preferido</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="localTreino" value="Em casa" /> Em casa</label>
+                      <label><input type="radio" name="localTreino" value="Academia comercial" /> Academia comercial</label>
+                      <label><input type="radio" name="localTreino" value="Ao ar livre/Studio" /> Ao ar livre/Studio</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Compromisso semanal</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="compromissoSemanal" value="1 a 2 vezes por semana" /> 1 a 2 vezes por semana</label>
+                      <label><input type="radio" name="compromissoSemanal" value="3 a 4 vezes por semana" /> 3 a 4 vezes por semana</label>
+                      <label><input type="radio" name="compromissoSemanal" value="5 a 6 vezes por semana" /> 5 a 6 vezes por semana</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button type="button" class="secondary-button step-back">Voltar</button>
+                <button type="button" class="primary-button step-next">Próximo</button>
+              </div>
+            </div>
+
+            <div class="form-step final-step" data-step="6">
+              <div class="form-section">
+                <h2 class="form-section-header">Hábitos, histórico e acompanhamento</h2>
+                <div class="form-grid">
+                  <div class="form-field full">
+                    <span class="question-label">Alimentação atual</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="alimentacao" value="Ruim" /> Ruim</label>
+                      <label><input type="radio" name="alimentacao" value="Regular" /> Regular</label>
+                      <label><input type="radio" name="alimentacao" value="Boa" /> Boa</label>
+                      <label><input type="radio" name="alimentacao" value="Excelente/Regrada" /> Excelente/Regrada</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Acompanhamento com nutricionista</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="nutricionista" value="Não" /> Não</label>
+                      <label><input type="radio" name="nutricionista" value="Sim" /> Sim</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Uso de suplementos</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="suplementos" value="Nenhum" /> Nenhum</label>
+                      <label><input type="radio" name="suplementos" value="Whey protein/Creatina" /> Whey protein/Creatina</label>
+                      <label><input type="radio" name="suplementos" value="Vitaminas/Minerais" /> Vitaminas/Minerais</label>
+                      <label><input type="radio" name="suplementos" value="Termogênicos" /> Termogênicos</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Nível de atividade recente</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="nivelAtividade" value="Sedentário" /> Sedentário</label>
+                      <label><input type="radio" name="nivelAtividade" value="Iniciante (algumas tentativas, mas irregular)" /> Iniciante (algumas tentativas, mas irregular)</label>
+                      <label><input type="radio" name="nivelAtividade" value="Intermediário (treino há algum tempo)" /> Intermediário (treino há algum tempo)</label>
+                      <label><input type="radio" name="nivelAtividade" value="Avançado (treino de alta intensidade)" /> Avançado (treino de alta intensidade)</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Maior barreira para iniciar</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="barreira" value="Falta de tempo" /> Falta de tempo</label>
+                      <label><input type="radio" name="barreira" value="Medo de sentir mais dor" /> Medo de sentir mais dor</label>
+                      <label><input type="radio" name="barreira" value="Falta de motivação" /> Falta de motivação</label>
+                      <label><input type="radio" name="barreira" value="Não saber por onde começar" /> Não saber por onde começar</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Preferência de exercícios</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="preferenciaExercicio" value="Musculação tradicional" /> Musculação tradicional</label>
+                      <label><input type="radio" name="preferenciaExercicio" value="Exercícios de mobilidade/alongamento" /> Exercícios de mobilidade/alongamento</label>
+                      <label><input type="radio" name="preferenciaExercicio" value="Exercícios aeróbicos" /> Exercícios aeróbicos</label>
+                      <label><input type="radio" name="preferenciaExercicio" value="Pilates/Funcional" /> Pilates/Funcional</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Experiência marcante em treinos antigos</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="experienciaTreino" value="Positiva (recebi atenção e tive bons resultados)" /> Positiva (recebi atenção e tive bons resultados)</label>
+                      <label><input type="radio" name="experienciaTreino" value="Negativa (fui ignorado ou me machuquei)" /> Negativa (fui ignorado ou me machuquei)</label>
+                      <label><input type="radio" name="experienciaTreino" value="Neutra (apenas cumpri tabela)" /> Neutra (apenas cumpri tabela)</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <span class="question-label">Coleta de dados para acompanhamento: possui disponibilidade para enviar fotos de avaliação postural/evolução (de biquíni/sunga ou roupa justa) e vídeos de execução dos exercícios quando solicitado?</span>
+                    <div class="option-list">
+                      <label><input type="radio" name="disponibilidadeMidias" value="Sim" /> Sim</label>
+                      <label><input type="radio" name="disponibilidadeMidias" value="Não" /> Não</label>
+                      <label><input type="radio" name="disponibilidadeMidias" value="A combinar/Tenho dúvidas" /> A combinar/Tenho dúvidas</label>
+                    </div>
+                  </div>
+
+                  <div class="form-field full">
+                    <label for="prazoMeta">Prazo/Meta de prazo</label>
+                    <textarea id="prazoMeta" name="prazoMeta" placeholder="Tem algum evento específico ou prazo em mente para alcançar seu objetivo?"></textarea>
+                  </div>
+
+                  <div class="form-field full">
+                    <label for="informacoesAdicionais">Informações adicionais</label>
+                    <textarea id="informacoesAdicionais" name="informacoesAdicionais" placeholder="Existe mais alguma informação sobre sua saúde, rotina ou histórico que você acha importante eu saber antes de montar seu treino?"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="notice" aria-live="polite">
+                <strong>Aviso de privacidade:</strong> estas informações são coletadas exclusivamente para fins de avaliação, planejamento e acompanhamento profissional do treino. A sua anamnese não substitui avaliação médica, diagnóstico ou liberação para exercícios.
+              </div>
+
+              <div class="checkbox-wrap">
+                <input id="consentimentoPrivacidade" name="consentimentoPrivacidade" type="checkbox" required />
+                <label for="consentimentoPrivacidade">
+                  Li e concordo com o uso das informações para fins profissionais, de acompanhamento e planejamento do treino.
+                  <span class="required-indicator">*</span>
+                </label>
+              </div>
+              <span id="consentimentoPrivacidadeError" class="error-message" aria-live="polite"></span>
+
+              <div class="step-actions">
+                <button type="button" class="secondary-button step-back">Voltar</button>
+                <button class="primary-button submit-button" type="submit" id="submitButton">Enviar anamnese</button>
+              </div>
+            </div>
+
+            <p id="statusMessage" class="status-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- 
+    <div class="brand-hero" aria-label="Marca da Letícia Farias">
+      <div class="brand-hero" aria-label="Logo da Letícia Farias">
+        <img class="brand-crest" src="assets/images/logonova.png" alt="Logo Letícia Farias" />
+
+        <div class="brand-lockup">
+          <h2>LETICIA FARIAS</h2>
+          <p>MUSCULAÇÃO TERAPÊUTICA</p>
+          <small>PREVENÇÃO | FORÇA | BLINDAGEM DO CORPO</small>
+        </div>
+      </div>
+    </div>
+    -->
+    <script type="module" src="assets/js/config.js"></script>
+    <script type="module" src="assets/js/anamnese.js"></script>
+  </body>
+</html>

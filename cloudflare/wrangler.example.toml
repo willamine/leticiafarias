@@ -1,0 +1,18 @@
+name = "formulario-anamnese-worker"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+workers_dev = true
+
+# Set your Cloudflare account id and a route if you want production binding.
+# Replace the placeholders below before publishing or use `wrangler login` + `wrangler publish`.
+account_id = "your_account_id_here"
+
+[build]
+command = ""
+
+[vars]
+# Optional static vars (not for secrets)
+# SUPABASE_URL = "https://your-project.supabase.co"
+
+# Secrets should be set with wrangler secret put SUPABASE_SERVICE_KEY
+# and wrangler secret put ADMIN_EMAILS

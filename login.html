@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Acesso ao painel administrativo do sistema de anamnese." />
+    <title>Login | Painel</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+  </head>
+  <body>
+    <main class="auth-layout">
+      <section class="card auth-card" aria-labelledby="loginTitle">
+        <span class="eyebrow">Painel administrativo</span>
+        <h1 id="loginTitle">Acesso restrito</h1>
+        <p class="lead">Faça login com sua conta autorizada para consultar os cadastros e as anamneses.</p>
+
+        <form id="loginForm" novalidate>
+          <div class="form-grid" style="grid-template-columns: 1fr;">
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <span id="emailError" class="error-message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="password">Senha</label>
+              <input id="password" name="password" type="password" autocomplete="current-password" required />
+              <span id="passwordError" class="error-message" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="primary-button">Entrar</button>
+            <a href="index.html" class="secondary-button">Voltar</a>
+          </div>
+
+          <p id="loginStatus" class="status-message" aria-live="polite"></p>
+        </form>
+
+        <div class="notice">
+          <strong>Configuração necessária:</strong> o primeiro administrador deve ser criado no Supabase seguindo o procedimento documentado no README.
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="assets/js/config.js"></script>
+    <script type="module" src="assets/js/autenticacao.js"></script>
+  </body>
+</html>
